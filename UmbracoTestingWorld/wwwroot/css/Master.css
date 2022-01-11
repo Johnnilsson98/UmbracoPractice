@@ -28,16 +28,20 @@ header {
     background: darkblue;
 }
 
+.upper{
+    border-bottom: solid grey 1px;
+}
+
 .upper, .lower {
     margin: auto;
     max-width:1346px;
     height: 80px;
-    border: solid 3px blue;
+    /*border: solid 3px blue;*/
 }
 /*Logo*/
 .logo {
     max-width: 150px;
-    padding-top: 6px;
+    padding-top: 7px;
 }
 
 .logo > a {
@@ -72,17 +76,16 @@ form.searchBar input[type=text] {
     background: #f1f1f1;
 }
 
-form.searchBar button{
+form.searchBar button {
     float: left;
     width: 48px;
     padding: 10px;
     background: #2196F3;
     color: white;
-    font-size: 17px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
-    height: 48px;
+    height: 47px;
 }
 
 form.searchBar button:hover {
@@ -97,7 +100,7 @@ form.searchBar::after {
 
 /*contact button*/
 .navbar-contact-button {
-    padding-top: 13px;
+    padding-top: 15px;
     height: 64px;
 }
 
@@ -108,10 +111,9 @@ form.searchBar::after {
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    border-left: none;
     cursor: pointer;
     width: 115px;
-    height: 48px;
+    height: 47px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
