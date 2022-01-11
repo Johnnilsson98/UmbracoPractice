@@ -48,6 +48,7 @@ header {
     color: white;
     font-weight: 900;
     font-size: 40px;
+    font-family: 'Copperplate Gothic';
 }
 
 .logo > a:hover {
@@ -116,4 +117,45 @@ form.searchBar::after {
     height: 47px;
     margin-right: 10px;
     margin-left: 5px;
+}
+
+/*Nav row*/
+
+.main-nav {
+    padding-top: 12px;
+    height: 81px;
+}
+
+.secondary-nav {
+    border: solid red 3px;
+}
+
+.ul-nav {
+    list-style-type: none;
+    overflow: hidden;
+    height: 59px;
+    padding-left: 0px;
+}
+
+.ul-nav > li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.first-li > a {
+    padding-left: 0px;
+}
+
+li a:hover{
+    color:antiquewhite;
+    text-decoration:none;
 }
