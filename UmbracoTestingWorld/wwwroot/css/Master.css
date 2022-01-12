@@ -120,14 +120,14 @@ form.searchBar::after {
 }
 
 /*Nav row*/
-
 .main-nav {
     padding-top: 12px;
     height: 81px;
 }
 
 .secondary-nav {
-    border: solid red 3px;
+    padding-top: 12px;
+    height: 81px;
 }
 
 .ul-nav {
@@ -158,4 +158,8 @@ li a {
 li a:hover{
     color:antiquewhite;
     text-decoration:none;
+}
+
+.secondary-ul-nav{
+    float: right;
 }
