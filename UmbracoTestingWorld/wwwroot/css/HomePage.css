@@ -1,0 +1,105 @@
+﻿.main-content{
+    background-color: lightgray;
+}
+
+/*Gif section*/
+.gif {
+    height: 490px;
+    background-image: url("/images/gif-not-gif.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gif-row{
+    margin-left: 0;
+}
+
+.gif-inner {
+    height: 100%;
+    background-color: rgba(162, 118, 162, 0.4);
+}
+
+.gif-container{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    max-width: 1346px;
+    min-width: 1000px;
+    padding-top: 120px;
+    position: relative;
+    z-index: 2;
+}
+
+.gif-row{
+    height: 220px;
+}
+
+.gif-title{
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+}
+
+.gif-top-p{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.gif-bottom{
+    color: white;
+    font-size: 26px;
+    padding-bottom: 12px;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.gif-button{
+    float: none;
+    margin: 0;
+}
+
+.gif-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.gif-fa-chevron-down{
+    font-size: 35px;
+    color: white;
+}
+
+/*Logo row*/
+
+.logo-section{
+    width: 100%;
+    height: 200px;
+    padding-top: 57.5px;
+    background: white;
+}
+
+.logo-container {
+    width: 90%;
+    margin: auto;
+    max-width: 1346px;
+}
+
+.max-width{
+    max-width: 185.9px;
+}
+
+.logo-img {
+    height: auto;
+    width: 100%;
+}
+
+.logo-row{
+    display: flex;
+}

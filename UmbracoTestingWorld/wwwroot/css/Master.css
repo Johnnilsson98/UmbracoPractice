@@ -10,16 +10,21 @@ body {
     box-sizing: border-box;
 }
 
-header > div{
-    
+.pageContainer{
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentContainer{
+    min-height: 29vh;
 }
 
 /*Layout*/
 .container {
     max-width: 100%;
     width: 100%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -93,12 +98,6 @@ form.searchBar button:hover {
     background: #0b7dda;
 }
 
-form.searchBar::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 /*contact button*/
 .navbar-contact-button {
     padding-top: 15px;
@@ -109,15 +108,21 @@ form.searchBar::after {
     float: right;
     padding: 10px;
     background: #2196F3;
-    color: white;
     font-size: 17px;
+    font-weight: bold;
     border: 1px solid grey;
     cursor: pointer;
     width: 115px;
     height: 47px;
     margin-right: 10px;
     margin-left: 5px;
+    border-radius: 3px;
 }
+
+.button-span{
+    color: white;
+}
+
 
 /*Nav row*/
 .main-nav {
@@ -141,7 +146,7 @@ form.searchBar::after {
     float: left;
 }
 
-li a {
+.ul-nav a {
     display: block;
     color: white;
     text-align: center;
@@ -155,11 +160,200 @@ li a {
     padding-left: 0px;
 }
 
-li a:hover{
-    color:antiquewhite;
-    text-decoration:none;
+.ul-nav > li > a:hover {
+    color: antiquewhite;
+    text-decoration: none;
 }
 
 .secondary-ul-nav{
     float: right;
+}
+
+/*Footer*/
+
+.borderTest{
+    /*border: 3px solid red;*/
+    height: 100%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 508px;
+}
+
+.footer-container{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: lightgray;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    max-width: 90%;
+}
+
+.title{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.contactNumber{
+    font-weight: bold;
+}
+
+.contactMail{
+    text-decoration: underline !important;
+    color: black !important;
+}
+
+.searchWithLinks {
+    height: 100%;
+    max-width: 410px;
+    margin: auto;
+}
+
+.navbarSearchFooter{
+    height: 60px;
+}
+
+.searchBarFooter {
+    max-width: 410px;
+    top: 75px;
+    padding-left: 0;
+
+}
+
+form.searchBarFooter input[type=text]{
+    width: 80%;
+}
+
+form.searchBarFooter button {
+    height: 48px;
+}
+
+.navFooter{
+    margin-top: 8px;
+}
+
+.footerUl{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 19px;
+    list-style-type: none;
+}
+
+.footerUl > li{
+    text-indent: -17px;
+    width: 180px;
+}
+
+.footerUl > li:before{
+    content: "-";
+    text-indent: -5px;
+    color: grey;
+}
+
+.footerUl > li > a{
+    color: black;
+    text-decoration: underline;
+}
+
+.footerUl > li > a:hover{
+    text-decoration: none;
+}
+
+.footerUl > li:hover::before {
+    color: black;
+}
+
+.titleDiv{
+    padding-left: 0px;
+}
+
+.openTimeDiv {
+    border-bottom: grey 2px solid;
+}
+
+.divP {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.divP > p {
+    margin-bottom: 7px;
+    margin-top: 7px;
+    width: 50%;
+}
+
+.inner{
+    width: 250px;
+    margin: auto;
+}
+
+.rightP{
+    text-align: right;
+    font-weight: bold;
+}
+
+/*Social media row*/
+
+.innerSocial{
+    margin-top: 50px;
+}
+
+.socialNav > ul {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.socialNav > ul > li{
+    display: inline;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.socialNav > ul > li > a{
+    text-decoration: none;
+}
+
+.socialImg {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.socialImg:hover{
+    opacity: 0.5;
+}
+
+/*copyright row*/
+
+.copyRightRow{
+    max-width: 90%;
+    margin: auto;
+}
+
+.copyRightFooterUl {
+    
+    padding-left: 0px;
+    padding-top: 100px;
+    list-style-type: none;
+}
+
+.copyRightFooterUl > li {
+    float: left;
+    padding-right: 10px;
+}
+
+.madeBy{
+    float: right !important;
 }
